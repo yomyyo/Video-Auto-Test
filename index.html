@@ -9,13 +9,22 @@
 </head>
 
 <body>
-    <h1>THIS IS A TEST</h1>
+    <h1>QR CODE</h1>
     <div>
-        <video class="theVid" src="videoplayback.mp4" height="auto" width="100%" controls autoplay muted playsinline></video>
+        <p>MY QR CODE GOES HERE</p>
+
+        <button onclick="generateBarCode()">CLICK ME</button>
+
+        <img id='barcode' 
+            src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" 
+            alt="" 
+            title="HELLO" 
+            width="200" 
+            height="200" />
     </div>
 </body>
 
 
-<script type="type/javascript" src="logic.js"></script>
+<script type="text/javascript" src="logic.js"></script>
 
 </html>
